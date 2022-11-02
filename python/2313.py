@@ -18,8 +18,8 @@ elif b > a and b > c:
 
 
 if a == b and b == c and c + b > a and b + a > c and a + c > b:
-  	print('Valido-Equilatero')
-  	retangulo(a , b, c)
+	print('Valido-Equilatero')
+	retangulo(a , b, c)
 elif (a == b or b == c or c == a) and c + b > a and b + a > c and a + c > b:
 	print('Valido-Isoceles')
 	retangulo(a , b, c)

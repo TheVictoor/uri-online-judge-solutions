@@ -7,7 +7,6 @@ class Node:
         self.right = None
         self.left = None
 
-
     def __str__(self) -> str:
         return self.value
 
@@ -28,8 +27,7 @@ class Tree:
         if node.right:
             self.in_order(node.right)
 
-
-    def add(self, node: Node, current: Node=None):
+    def add(self, node: Node, current: Node = None):
         if not current:
             current = self.root
 
@@ -66,6 +64,6 @@ while 1:
                 root.add(Node(word))
             return ""
 
-        re.sub(r'[a-zA-Z]+', check_word, inp)
+        re.sub(r"[a-zA-Z]+", check_word, inp)
         root.in_order()
         break

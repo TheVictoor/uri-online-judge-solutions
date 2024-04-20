@@ -1,4 +1,5 @@
 if len(input()) > 80:
-	print('NO')
+    print("NO")
 else:
-	print('YES')
+    print("YES")
+

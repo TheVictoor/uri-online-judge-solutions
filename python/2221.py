@@ -1,26 +1,26 @@
 x = int(input())
 
 for i in range(x):
-	b = int(input())
-	
-	d = input()
-	d = d.split(' ')
+    b = int(input())
 
-	g = input()
-	g = g.split(' ')
+    d = input()
+    d = d.split(" ")
 
-	va = (int(d[0]) + int(d[1]))/2
+    g = input()
+    g = g.split(" ")
 
-	vb = (int(g[0]) + int(g[1]))/2
+    va = (int(d[0]) + int(d[1])) / 2
 
-	if int(d[2]) % 2 == 0:
-		va += b
-	if int(g[2]) % 2 == 0:
-		vb += b
+    vb = (int(g[0]) + int(g[1])) / 2
 
-	if va > vb:
-		print('Dabriel')
-	elif vb > va:
-		print('Guarte')
-	elif vb == va:
-		print('Empate')
+    if int(d[2]) % 2 == 0:
+        va += b
+    if int(g[2]) % 2 == 0:
+        vb += b
+
+    if va > vb:
+        print("Dabriel")
+    elif vb > va:
+        print("Guarte")
+    elif vb == va:
+        print("Empate")

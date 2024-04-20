@@ -1,10 +1,10 @@
-from collections import defaultdict
 import re
+from collections import defaultdict
 
 n = int(input())
 
 for i in range(n):
-    test_case = re.sub(r'[^a-z]', "", input().lower())
+    test_case = re.sub(r"[^a-z]", "", input().lower())
 
     map_chars = defaultdict(lambda: 0)
 

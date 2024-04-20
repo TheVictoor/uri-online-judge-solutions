@@ -8,3 +8,4 @@ x = """<AMO FAZER EXERCICIO NO URI>
 <AMO FAZER EXERCICIO           >"""
 
 print(x)
+

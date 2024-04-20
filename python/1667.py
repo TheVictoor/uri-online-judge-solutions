@@ -19,17 +19,17 @@ def replace_function(tag: re.Match):
     value = tag.group(0)
 
     if value == "\n <hr> " or value == "\n<hr> " or value == "\n<hr>":
-        return "\n" + ("-"*80) + "\n"
+        return "\n" + ("-" * 80) + "\n"
     if value == " <hr> " or value == "<hr> " or value == "<hr>":
-        return ("-"*80) + "\n"
-    if value == " <br> " or value == "<br> " or value == "<br>": 
+        return ("-" * 80) + "\n"
+    if value == " <br> " or value == "<br> " or value == "<br>":
         return "\n"
 
 
 def fix_rule(match: re.Match):
     value = match.group(0)
     parts = re.split(r"\b", value)
-    
+
     if len(parts) == 1:
         parts[0] = parts[0][:-1] + "\n" + parts[0][-1]
         return "".join(parts)
@@ -38,9 +38,9 @@ def fix_rule(match: re.Match):
 
     if last_part == "":
         parts[-3] = "\n"
-    else: 
-        parts[-1] = "\n"+parts[-1]
-    
+    else:
+        parts[-1] = "\n" + parts[-1]
+
     return "".join(parts)
 
 

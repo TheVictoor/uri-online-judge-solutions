@@ -1,5 +1,3 @@
-
-
 class Node:
     def __init__(self, value) -> None:
         self.left = None
@@ -12,15 +10,15 @@ class Tree:
         self.root = None
 
     def pre_order(self, node=None, l=[]):
-        if node is None: 
+        if node is None:
             return
-        
+
         l.append(str(node.value))
         self.pre_order(node.left, l)
         self.pre_order(node.right, l)
 
     def in_order(self, node=None, l=[]):
-        if node is None: 
+        if node is None:
             return
 
         self.in_order(node.left, l)
@@ -28,7 +26,7 @@ class Tree:
         self.in_order(node.right, l)
 
     def pos_order(self, node=None, l=[]):
-        if node is None: 
+        if node is None:
             return
 
         self.pos_order(node.left, l)
@@ -43,7 +41,7 @@ class Tree:
             root.left = self.add(root.left, node)
         elif node.value >= root.value:
             root.right = self.add(root.right, node)
-        
+
         return root
 
 
@@ -67,11 +65,11 @@ for case in range(n_cases):
     print(f"Case {case+1}:")
     l = []
     tree.pre_order(tree.root, l)
-    print('Pre.: {0}'.format(" ".join(l)))
+    print("Pre.: {0}".format(" ".join(l)))
     l = []
     tree.in_order(tree.root, l)
-    print('In..: {0}'.format(" ".join(l)))
+    print("In..: {0}".format(" ".join(l)))
     l = []
-    tree.pos_order(tree.root,l)
-    print('Post: {0}'.format(" ".join(l)))
-    print('')
+    tree.pos_order(tree.root, l)
+    print("Post: {0}".format(" ".join(l)))
+    print("")

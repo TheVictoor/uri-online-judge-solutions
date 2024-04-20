@@ -1,6 +1,6 @@
 i = input()
 
-i = i.split(' ')
+i = i.split(" ")
 
 di = int(i[0])
 va = int(i[1])
@@ -9,10 +9,11 @@ qd = int(i[3])
 xx = di + qd
 
 if di % 2 == 0 and xx % 2 == 0:
-	print(va)
+    print(va)
 elif di % 2 == 1 and xx % 2 == 1:
-	print(va)
+    print(va)
 elif di % 2 == 0 and xx % 2 == 1:
-	print(va - vr)
+    print(va - vr)
 elif di % 2 == 1 and xx % 2 == 0:
-	print(va + vr)
+    print(va + vr)
+

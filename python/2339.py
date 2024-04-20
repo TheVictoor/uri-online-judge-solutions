@@ -2,6 +2,7 @@ c, p, f = input().split()
 c, p, f = int(c), int(p), int(f)
 
 if p / c >= f:
-  print("S")
+    print("S")
 else:
-  print("N")
+    print("N")
+

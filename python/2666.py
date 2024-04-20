@@ -1,13 +1,14 @@
 import math
-
 import sys
+
 sys.setrecursionlimit(100000)
 
 n, quantity_by_travel = [int(i) for i in input().strip().split()]
 taxes = [int(i) for i in input().strip().split()]
 taxes.insert(0, 0)
-visided = [False for _ in range(n+1)]
+visided = [False for _ in range(n + 1)]
 graphs = {}
+
 
 class Edge:
     def __init__(self, name):
@@ -27,11 +28,13 @@ while True:
 
         graphs[a] = a_edge
         graphs[b] = b_edge
-    except: 
+    except:
         break
 
 
 travels = 0
+
+
 def dfs(city: Edge, cost):
     global travels
 
@@ -42,10 +45,11 @@ def dfs(city: Edge, cost):
         if not visided[neightbor.name]:
             city_tax += dfs(neightbor, n_cost)
 
-    n_travels = math.ceil(city_tax/quantity_by_travel)   
+    n_travels = math.ceil(city_tax / quantity_by_travel)
     travels += n_travels * 2 * cost
 
-    return city_tax    
+    return city_tax
+
 
 travels = 0
 dfs(graphs.get(1), 0)

@@ -9,8 +9,8 @@ side_a = b + t
 side_b = (base - b) + (top - t)
 
 if side_a > side_b:
-  print(1)
+    print(1)
 elif side_a < side_b:
-  print(2)
+    print(2)
 else:
-  print(0)
+    print(0)

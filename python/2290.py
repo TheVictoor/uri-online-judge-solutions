@@ -5,13 +5,13 @@ while 1:
         if n == 0:
             break
 
-        list_of_values = input().split(' ')
+        list_of_values = input().split(" ")
 
         d = {}
         p = []
 
         for i in list_of_values:
-            if i == '':
+            if i == "":
                 continue
             if d.get(i):
                 d[i] = d[i] + 1
@@ -26,3 +26,4 @@ while 1:
         print(*p)
     except:
         break
+

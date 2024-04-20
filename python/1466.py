@@ -1,5 +1,3 @@
-
-
 class Node:
     def __init__(self, value) -> None:
         self.left = None
@@ -19,12 +17,12 @@ class Tree:
             root.left = self.add(root.left, node)
         elif node.value >= root.value:
             root.right = self.add(root.right, node)
-        
+
         return root
 
     def in_level(self, root: Node, l: list):
         l.append(str(root.value))
-        
+
         queue = [root.left, root.right]
 
         while queue:
@@ -34,7 +32,6 @@ class Tree:
                 queue.extend([node.left, node.right])
 
         return l
-        
 
 
 n_cases = int(input())
@@ -57,4 +54,3 @@ for case in range(n_cases):
     tree.in_level(tree.root, l)
     print(" ".join(l))
     print()
-    

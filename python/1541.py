@@ -1,18 +1,18 @@
 import math
 
 while 1:
-	aaa = input()	
-	inp = aaa.split(' ')
-	if inp[0] == '0':
-		break
-	
-	a = int(inp[0])
-	b = int(inp[1])
-	c = int(inp[2])
+    aaa = input()
+    inp = aaa.split(" ")
+    if inp[0] == "0":
+        break
 
-	mqdr = a * b
-	x = (mqdr * 100) / c
+    a = int(inp[0])
+    b = int(inp[1])
+    c = int(inp[2])
 
-	x = int(math.sqrt(x))
+    mqdr = a * b
+    x = (mqdr * 100) / c
 
-	print(x)
+    x = int(math.sqrt(x))
+
+    print(x)

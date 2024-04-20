@@ -6,10 +6,11 @@ a = int(x)
 # print(x[::-1])
 
 v = 0
-# decompoe o valor e mostra 
+# decompoe o valor e mostra
 for i in range(len(x)):
-	v = a % 10
-	print(v , end='')
-	a = a // 10
+    v = a % 10
+    print(v, end="")
+    a = a // 10
 
 print()
+

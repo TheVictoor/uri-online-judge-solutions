@@ -1,4 +1,4 @@
-tp = input()
+jp = input()
 
 tp = tp.split(' ')
 

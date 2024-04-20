@@ -16,6 +16,7 @@ def is_substr(main_str: str, current_str: str):
 
     return "No"
 
+
 n_cases = int(input())
 
 for case in range(n_cases):

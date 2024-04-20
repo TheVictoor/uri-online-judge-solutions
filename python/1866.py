@@ -1,9 +1,10 @@
-x  = int(input())
+x = int(input())
 
 for i in range(x):
-	a = int(input())
+    a = int(input())
 
-	if a % 2 == 0:
-		print(0)
-	else:
-		print(1)
+    if a % 2 == 0:
+        print(0)
+    else:
+        print(1)
+

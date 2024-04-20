@@ -1,8 +1,9 @@
 x = int(input())
 
-print('Feliz nat', end='')
+print("Feliz nat", end="")
 
 for i in range(x):
-	print('a', end='')
+    print("a", end="")
 
-print('l!')
+print("l!")
+

@@ -1,4 +1,5 @@
 x = input()
-x = x.split(' ')
+x = x.split(" ")
 
-print('%.2f' %(int(x[0]) / int(x[1])))
+print("%.2f" % (int(x[0]) / int(x[1])))
+

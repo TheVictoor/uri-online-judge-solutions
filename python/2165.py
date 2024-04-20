@@ -1,4 +1,5 @@
 if len(input()) > 140:
-	print('MUTE')
+    print("MUTE")
 else:
-	print('TWEET')
+    print("TWEET")
+

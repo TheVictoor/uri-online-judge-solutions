@@ -1,4 +1,3 @@
-
 def check_train_sequence(desired_wagons_sequence: list, a_direction: list):
     station = []
     b_direction = []
@@ -34,13 +33,12 @@ while True:
 
         while 1:
             i = input()
-            if i == '0':
+            if i == "0":
                 print()
                 break
-            i = i.split(' ')
+            i = i.split(" ")
             i = [int(a) for a in i]
-            l = list(range(1, x+1))
-            print('Yes') if check_train_sequence(i, l) else print('No')
+            l = list(range(1, x + 1))
+            print("Yes") if check_train_sequence(i, l) else print("No")
     except:
         break
-
